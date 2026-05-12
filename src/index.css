@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.cat-section {
+  scroll-margin-top: 90px;
+}
+
+@supports (padding: max(0px)) {
+  .modal-safe {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
